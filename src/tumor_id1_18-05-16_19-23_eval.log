@@ -1,0 +1,21 @@
+INFO:tensorflow:Using default config.
+INFO:tensorflow:Using config: {'_keep_checkpoint_max': 5, '_master': '', '_save_checkpoints_secs': 600, '_save_checkpoints_steps': None, '_global_id_in_cluster': 0, '_num_worker_replicas': 1, '_is_chief': True, '_service': None, '_session_config': None, '_task_type': 'worker', '_log_step_count_steps': 100, '_task_id': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f662b4c6f60>, '_tf_random_seed': None, '_num_ps_replicas': 0, '_evaluation_master': '', '_model_dir': '/tmp/nsclc_convnet_model', '_save_summary_steps': 100, '_keep_checkpoint_every_n_hours': 10000}
+INFO:tensorflow:Calling model_fn.
+INFO:tensorflow:Done calling model_fn.
+INFO:tensorflow:Starting evaluation at 2018-05-17-03:18:39
+INFO:tensorflow:Graph was finalized.
+2018-05-16 23:18:39.626732: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-05-16 23:18:39.844967: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla K40c major: 3 minor: 5 memoryClockRate(GHz): 0.745
+pciBusID: 0000:08:00.0
+totalMemory: 11.17GiB freeMemory: 11.06GiB
+2018-05-16 23:18:39.845008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-05-16 23:18:40.143475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-16 23:18:40.143509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2018-05-16 23:18:40.143516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2018-05-16 23:18:40.143807: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10724 MB memory) -> physical GPU (device: 0, name: Tesla K40c, pci bus id: 0000:08:00.0, compute capability: 3.5)
+INFO:tensorflow:Restoring parameters from /tmp/nsclc_convnet_model/model.ckpt-286676
+INFO:tensorflow:Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+INFO:tensorflow:Finished evaluation at 2018-05-17-03:22:38
+INFO:tensorflow:Saving dict for global step 286676: accuracy = 0.631002, false_neg = 898.0, false_pos = 16101.0, global_step = 286676, loss = 0.6602503, true_neg = 23547.0, true_pos = 5522.0
